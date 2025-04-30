@@ -1,0 +1,44 @@
+body {
+    color: rgb(46, 59, 25);
+}
+
+q {
+    color: rgb(102, 51, 153);
+}
+
+/* COMBINATION SELECTOR */
+h1,h2,h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(133, 6, 133)
+}
+
+/* CLASS SELECTOR */
+.list_item {
+    color: rgb(0, 128, 128);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    color: rgb(187, 63, 10);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* RELATIONAL SELECTOR */
+section#supernatural_section>ul {
+    color: rgb(239, 158, 9)
+}
+
+/* PSEUDO-ELEMENT */
+section#crime_selection a:visited {
+    color:rgb(133, 6, 133)
+}
+
+section#crime_section a:hover {
+    font-size: 200%;
+    color:rgb(0, 0, 255);
+}
+
+
+/* img {
+      float: left;
+    margin-right: 1em; */
