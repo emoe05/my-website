@@ -1,44 +1,129 @@
 body {
-    color: rgb(46, 59, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(#1c1c1c, #2c3e50);
+    color: #e0e0e0;
 }
 
-q {
-    color: rgb(102, 51, 153);
+h1,
+h2,
+h3 {
+    color: #ffffff;
+    margin: 1em 0 0.5em;
 }
 
-/* COMBINATION SELECTOR */
-h1,h2,h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(133, 6, 133)
+h1 {
+    font-size: 2em;
+    margin-top: 1.5em;
 }
 
-/* CLASS SELECTOR */
-.list_item {
-    color: rgb(0, 128, 128);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
 }
 
 p {
-    color: rgb(187, 63, 10);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0.5em auto;
+    max-width: 600px;
+    padding: 0 1em;
 }
 
-/* RELATIONAL SELECTOR */
-section#supernatural_section>ul {
-    color: rgb(239, 158, 9)
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    text-align: left;
+    display: inline-block;
+    margin: 0.5em auto;
 }
 
-/* PSEUDO-ELEMENT */
-section#crime_selection a:visited {
-    color:rgb(133, 6, 133)
+.list_item,
+ul li {
+    margin-bottom: 0.3em;
 }
 
-section#crime_section a:hover {
-    font-size: 200%;
-    color:rgb(0, 0, 255);
+section img {
+    margin-top: 0.5em;
+    border-radius: 8px;
+    border-color: rgb(189, 183, 107);
+    border-style: groove;
 }
 
+section {
+    border-top: 1px solid #ccc;
+    padding: 1.5em 0;
+    margin: 1.5em 0;
+}
 
-/* img {
-      float: left;
-    margin-right: 1em; */
+footer {
+    margin-top: 2em;
+    padding: 1em 0;
+    font-size: 0.9em;
+    background-color: #eee;
+}
+
+a h3 {
+    text-decoration: none;
+    color: #00bcd4;
+}
+
+a:hover h3 {
+    color: #9c27b0;
+}
+
+a:hover h3 {
+    font-size: 125%;
+    color: #ff4081;
+}
+
+body.ancient-page .three-column-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+body.ancient-page .column {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000055;
+    transition: transform 0.3s ease;
+}
+
+body.ancient-page .column:hover {
+    transform: scale(1.03);
+}
+
+body.ancient-page .column img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+body.ancient-page h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+body.ancient-page p {
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9rem;
+}
