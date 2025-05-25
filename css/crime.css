@@ -1,0 +1,41 @@
+/* flex layout for three column */
+body.crime-page .three-column-layout {
+    display: block; /* vertical column stack */
+    max-width: 800px;  /* limits container growth */
+    margin: 0 auto;    /* centered layout */
+    padding: 1rem;     /* adds space */
+    gap: 2rem;         /* Not needed for block layout, but harmless; used in grid/flex spacing */
+}
+
+/* styling for columns */
+body.crime-page .three-column-layout .column {
+    width: 100%;                    /* column takes full width */
+    margin-bottom: 2rem;            /* adds space between columns */
+    background-color: rgba(255, 255, 255, 0.05); /* translucent background */
+    padding: 1rem;                  /* space inside each box */
+    border-radius: 8px;             /* rounded corners */
+    box-shadow: 0 0 10px #00000055; /* shadow */
+}
+
+/* image styling */
+body.crime-page .three-column-layout .column img {
+    width: 50%;         /* half of container */
+    height: auto;       /* aspect ratio */
+    border-radius: 4px; /* rounded corners */
+    margin-top: 1rem;   /* spacing */
+}
+
+/* h1, h2 styling */
+body.crime-page h1,
+body.crime-page h2 {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #ffffff;                            
+}
+
+/* p styling */
+body.crime-page p {
+    font-family: 'Roboto', sans-serif; 
+    color: #e0e0e0;                    
+    line-height: 1.5;                  /* improves readability by increasing line spacing */
+    text-align: left;                  /* left-aligns paragraph text */
+}

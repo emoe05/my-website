@@ -1,0 +1,38 @@
+/* === FLEX LAYOUT FOR THREE COLUMNS === */
+body.modern-page .three-column-layout {
+    display: block; /* stack sections vertically */
+    max-width: 800px;  /* optional max width for content */
+    margin: 0 auto;    /* center container */
+    padding: 1rem;
+    gap: 2rem;
+}
+
+body.modern-page .three-column-layout .column {
+    width: 100%;
+    margin-bottom: 2rem; /* spacing between sections */
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000055;
+}
+
+body.modern-page .three-column-layout .column img {
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+
+body.modern-page h1,
+body.modern-page h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+body.modern-page p {
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    line-height: 1.5;
+    text-align: left;
+}
