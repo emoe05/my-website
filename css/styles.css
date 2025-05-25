@@ -1,101 +1,128 @@
 /* body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background: linear-gradient(#1c1c1c, #2c3e50);
-    color: #e0e0e0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: linear-gradient(#1c1c1c, #2c3e50);
+  color: #e0e0e0;
 }
 
 /* headings */
-h1, h2, h3 {
-    color: #ffffff;
-    margin: 1em 0 0.5em;
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  margin: 1em 0 0.5em;
 }
 
 h1 {
-    font-size: 2em;
-    margin-top: 1.5em;
+  font-size: 2em;
+  margin-top: 1.5em;
 }
 
 h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /* paragraphs */
 p {
-    margin: 0.5em auto;
-    max-width: 600px;
-    padding: 0 1em;
+  margin: 0.5em auto;
+  max-width: 600px;
+  padding: 0 1em;
 }
 
 /* nav bar */
 .nav-menu {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;  /* nav takes full width */
-    flex-wrap: wrap; /* wrapping if needed */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  /* nav takes full width */
+  flex-wrap: wrap;
+  /* wrapping if needed */
+  list-style: none;
+  /* removes bullet points */
 }
 
-
 .nav-menu li a {
-    text-decoration: none;
-    color: #00bcd4;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-menu li a:hover {
-    color: #ff4081;
+  color: #ff4081;
 }
 
 /* links */
 a h3 {
-    text-decoration: none;
-    color: #00bcd4;
+  text-decoration: none;
+  color: #00bcd4;
 }
 
 a:hover h3 {
-    font-size: 125%;
-    color: #ff4081;
+  font-size: 125%;
+  color: #ff4081;
 }
 
 /* u lists */
 ul {
-    list-style-type: disc;
-    padding-left: 1.5em;
-    text-align: left;
-    display: inline-block;
-    margin: 0.5em auto;
+  list-style-type: disc;
+  padding-left: 1.5em;
+  text-align: left;
+  display: inline-block;
+  margin: 0.5em auto;
 }
 
 .list_item,
 ul li {
-    margin-bottom: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 /* sections */
 section {
-    padding: 1.5em 0;
-    margin: 1.5em 0;
+  padding: 1.5em 0;
+  margin: 1.5em 0;
+  /* border-style: inset;
+  border-color: rgb(78, 67, 110) */
 }
 
 section img {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 8px;
+  border-color: rgb(189, 183, 107);
+  border-style: groove;
+}
+
+.about-flex {
+    padding: 2rem;
+    background-color: #111;
+    color: #fff;
+}
+
+.about-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1 1 45%; /* flexible, takes ~half of container */
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
     border-radius: 8px;
-    border-color: rgb(189, 183, 107);
-    border-style: groove;
 }
 
 /* footer */
 footer {
-  display: flex; /* flex box */
+  display: flex;
+  /* flex box */
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
@@ -105,34 +132,69 @@ footer {
 
 
 /* media queries */
-@media (max-width: 768px) {
-    .three-column-layout {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .nav-menu {
-        flex-direction: column;
-        gap: 1rem;
-    }
+/* tablet */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    /* stack nav links vertically */
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .three-column-layout .column img {
+    width: 70%;
+    /* slightly larger image since layout is stacking */
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    /* scale down title */
+    text-align: center;
+  }
 }
 
-@media (max-width: 480px) {
-    .nav-menu {
-        flex-direction: column;      /* stack items vertically */
-        align-items: center;         /* center items horizontally */
-        gap: 0.75rem;                /* smaller gap */
-        width: 100%;
-    }
-    
-    .nav-menu li {
-        width: 100%;                 /* full width so each link takes the whole row */
-        text-align: center;
-    }
-    
-    .nav-menu li a {
-        display: block;              /* make links block for full clickable area */
-        width: 100%;
-    }
+
+/* small tablets and large phones */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .three-column-layout .column {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .three-column-layout .column img {
+    width: 100%;
+    /* images fill container */
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }
 
+/* phones */
+@media screen and (max-width: 360px) {
+  nav ul.nav-menu {
+    font-size: 0.8rem;
+    /* smaller nav text */
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  section h2,
+  section h3 {
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

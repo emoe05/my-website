@@ -1,15 +1,18 @@
-/* === FLEX LAYOUT FOR THREE COLUMNS === */
 body.supernatural-page .three-column-layout {
-    display: block; /* stack sections vertically */
-    max-width: 800px;  /* optional max width for content */
-    margin: 0 auto;    /* center container */
+    display: block;
+    /* stack sections vertically */
+    max-width: 800px;
+    /* optional max width for content */
+    margin: 0 auto;
+    /* center container */
     padding: 1rem;
     gap: 2rem;
 }
 
 body.supernatural-page .three-column-layout .column {
     width: 100%;
-    margin-bottom: 2rem; /* spacing between sections */
+    margin-bottom: 2rem;
+    /* spacing between sections */
     background-color: rgba(255, 255, 255, 0.05);
     padding: 1rem;
     border-radius: 8px;
