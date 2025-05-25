@@ -10,6 +10,16 @@ body.modern-page .three-column-layout {
     gap: 2rem;
 }
 
+body.modern-page .three-column-layout .column {
+    width: 100%;
+    margin-bottom: 2rem;
+    /* spacing between sections */
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000055;
+}
+
 body.modern-page .three-column-layout .column img {
     width: 50%;
     height: auto;
