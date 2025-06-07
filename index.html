@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     <!-- links css -->
     <title>Mystery Vault</title>
     <!-- titles tab -->
+     <link rel="icon" href="/img/fav.png">
 </head>
 
 <body>
@@ -20,12 +25,11 @@
             <nav>
                 <ul class="nav-menu">
                     <!-- unordered list of navigation links -->
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                     <li><a href="ancient.html">Ancient</a></li>
                     <li><a href="crime.html">Crime</a></li>
                     <li><a href="modern.html">Modern</a></li>
                     <li><a href="supernatural.html">Supernatural</a></li>
-                    <li><a href="#about">About</a></li> <!--internal link-->
                 </ul>
             </nav>
         </div>
@@ -34,7 +38,7 @@
     <!-- main content -->
     <main>
         <!-- crime section -->
-        <section id="crime_section">
+        <section id="crime_section" class="section-box">
             <h2>Mysteries by Category</h2>
             <a href="crime.html"> <!-- links crime page -->
                 <h3>Crimes</h3>
@@ -46,11 +50,11 @@
                 <li class="list_item">Government</li>
             </ul>
             <!-- image for crime section -->
-            <img src="img/cooper.png" height="100px" alt="A picture of wanted criminal D.B. Cooper">
+            <img src="img/cooper.png" alt="A picture of wanted criminal D.B. Cooper">
         </section>
 
         <!-- modern section -->
-        <section id="modern_section">
+        <section id="modern_section" class="section-box">
             <a href="modern.html"> <!-- links modern page -->
                 <h3>Modern</h3>
             </a>
@@ -61,11 +65,11 @@
                 <li>Conspiracies</li>
             </ul>
             <!-- image for modern section -->
-            <img src="img/mh370.png" height="100px" alt="A picture of missing flight MH370">
+            <img src="img/mh370.png" alt="A picture of missing flight MH370">
         </section>
 
         <!-- ancient section -->
-        <section id="ancient_section">
+        <section id="ancient_section" class="section-box">
             <a href="ancient.html"> <!-- links ancient page -->
                 <h3>Ancient</h3>
             </a>
@@ -76,11 +80,11 @@
                 <li>Lost cities</li>
             </ul>
             <!-- image for ancient section -->
-            <img src="img/atlantis.jpg" height="100px" alt="A picture of an old map of Atlantis">
+            <img src="img/atlantis.jpg" alt="A picture of an old map of Atlantis">
         </section>
 
         <!-- supernatural section -->
-        <section id="supernatural_section">
+        <section id="supernatural_section" class="section-box">
             <a href="supernatural.html"> <!-- links supernatural page -->
                 <h3>Supernatural</h3>
             </a>
@@ -91,7 +95,7 @@
                 <li>Witchcraft</li>
             </ul>
             <!-- image for supernatural section -->
-            <img src="img/ghost.png" height="100px" alt="A picture of a cartoon ghost">
+            <img src="img/ghost.png" alt="A picture of a cartoon ghost">
         </section>
 
         <!-- external Link -->
@@ -103,7 +107,7 @@
         </p> -->
 
         <!-- internal link to about section -->
-        
+
 
         <!-- about section -->
         <section id="about" class="about-flex">
@@ -140,6 +144,10 @@
     <!-- footer -->
     <footer>
         <p>&copy; Evan Moe 2025</p>
+        <ul class="footer-links">
+            <li><a href="#">Return to Top</a></li>
+        </ul>
+
         <!-- copyright -->
     </footer>
 </body>
