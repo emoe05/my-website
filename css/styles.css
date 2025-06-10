@@ -44,7 +44,7 @@ p {
   width: 100%;
   /* nav takes full width */
   flex-wrap: wrap;
-  /* wrapping if needed */
+  /* wrapping */
   list-style: none;
   /* removes bullet points */
 }
@@ -93,13 +93,6 @@ section {
   /* border-style: inset;
   border-color: rgb(78, 67, 110) */
 }
-
-/* section img {
-  margin-top: 0.5em;
-  border-radius: 8px;
-  border-color: rgb(189, 183, 107);
-  border-style: groove;
-} */
 
 .about-flex {
     padding: 2rem;
